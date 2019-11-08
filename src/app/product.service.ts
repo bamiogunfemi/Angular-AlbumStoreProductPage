@@ -17,7 +17,7 @@ private _productsUrl = '../assets/products.json';
        <Album>response.json())
       }
 
-      getProducts() :Observable<Product[ ]>{
+      getProducts() :Observable<Product[]>{
         return this._http.get(this._productsUrl).map(response=>
           <Product[]>response.json());
       }
